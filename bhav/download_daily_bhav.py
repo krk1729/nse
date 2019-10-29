@@ -39,7 +39,7 @@ for day_number in range(total_days):
             resp = requests.get(url_download)
             with open(zipfilename, "wb") as code:
                 code.write(resp.content)
-            shutil.move(zipfilename, "../../data/bhavcopy/")
+            shutil.move(zipfilename, "../../../../data/bhavcopy/")
         except:
             continue
     else:
